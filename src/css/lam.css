@@ -1,0 +1,306 @@
+/* 
+==========CSS FOR THE RECIPES👇========== 
+*/
+
+/****** FRAMEWORK BY MYSELF ******/
+
+.text-center {
+    text-align: center;
+}
+
+.column-around-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-around-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.background-standard {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 100vh;
+}
+
+/****** FRAMEWORK BY MYSELF ******/
+
+/****** INTRO VIDEO ******/
+
+.intro {
+    position: fixed;
+    z-index: -1;
+}
+
+#intro_video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.hide_video {
+    /*hide video if scroll display up*/
+    opacity: 0.3;
+    transition: 1s ease-in-out;
+}
+
+.name-of-recipe {
+    /* to center the div, but just copy from w3, haven't got it yet */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* to center the div, but just copy from w3, haven't got it yet */
+    width: 64vw;
+    border-bottom: 1px solid lightgray;
+}
+
+.name-of-recipe th {
+    color: white;
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.name-of-recipe th span {
+    white-space: nowrap;
+}
+
+.name-of-recipe tr {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.name-of-recipe tr td {
+    color: gray;
+    background-color: lightgray;
+    border-radius: 8px;
+    height: 48px;
+}
+
+.name-of-recipe tr td img {
+    object-fit: contain;
+    width: 32px;
+    padding: 4px;
+}
+
+.name-of-recipe tr td p {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/****** INTRO VIDEO ******/
+
+/****** INGREDIENTS ******/
+
+main {
+    background-color: #fff;
+}
+
+.main-content {
+    box-shadow: 0px -20px 10px 10px white;
+    padding: 0 10%;
+}
+
+.ingredients {
+    margin-top: 100vh;
+    padding: 30px 0;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    border-width: 0;
+    color: lightgray;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.ingredients #how-many-portions {
+    display: flex;
+    white-space: nowrap;
+    font-weight: bold;
+    align-items: center;
+    /* column-gap: 20px; */ /*makes distance between children*/
+    margin-bottom: 30px;
+}
+
+.ingredients #how-many-portions button {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0 4px 4px 0;
+}
+
+.ingredients #how-many-portions button:hover {
+    background-color: #559D46;
+}
+
+.ingredients #how-many-portions label {
+    border-radius: 5px;
+    margin: 0 20px 0 0;
+}
+
+.ingredients #how-many-portions input {
+    width: 20vw;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 3px solid #efefef;
+}
+
+.ingredients #how-many-portions input:focus {
+    outline: none !important;
+    border: 3px solid #559D46;
+    box-shadow: 0 0 10px #559D46;
+}
+
+.ingredients-detail p:nth-child(odd) {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+
+.ingredients-detail p {
+    margin: 0;
+}
+
+.ingredients-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients-detail>p {
+    padding: 10px;
+}
+
+/****** INGREDIENTS ******/
+
+/****** INSTRUCTION ******/
+
+.instruction {
+    margin-bottom: 30px;
+}
+
+.instruction h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.instruction h4 {
+    margin: 0;
+}
+
+.instruction p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/****** INSTRUCTION ******/
+
+/****** AUTHOR ******/
+
+.author {
+    padding-bottom: 30px;
+}
+
+.author h3 {
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+}
+
+.author div {
+    display: flex;
+}
+
+.author h3 {
+    margin: 10vh auto 30px;
+}
+
+.author img {
+    object-fit:contain;
+    object-position: center;
+    border-radius: 100%;
+    width: 80px;
+    margin-right: 10px;
+}
+
+/****** AUTHOR ******/
+
+/****** RESPONSIVE ******/
+
+@media (max-width:1024px) {
+    .intro {
+        top: 84px;
+    }
+    .name-of-recipe th {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+    .name-of-recipe tr td {
+        border-radius: 6px;
+        height: 32px;
+    }
+    .name-of-recipe tr td img {
+        width: 24px;
+        padding: 3px;
+    }
+    .name-of-recipe tr td p {
+        font-size: 12px;
+        padding: 3px;
+    }
+    .ingredients {
+        margin-top: 68vw;
+    }
+}
+
+@media (max-width:650px) {
+    .intro {
+        top: 50px;
+    }
+    .name-of-recipe th {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+    .name-of-recipe tr td {
+        border-radius: 4px;
+        height: 24px;
+    }
+    .name-of-recipe tr td img {
+        width: 15px;
+        padding: 2px;
+    }
+    .name-of-recipe tr td p {
+        padding: 2px;
+    }
+    .ingredients {
+        margin-top: 56vw;
+    }
+    .instruction h3, .author {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .name-of-recipe th {
+        font-size: 20px;
+    }
+}
+
+/****** RESPONSIVE ******/
+
+/*
+ ==========👆CSS FOR THE RECIPES========== 
+*/

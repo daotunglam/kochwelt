@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/veysel.css" />
+    <link rel="stylesheet" href="src/css/daniel.css" />
+    <link rel="stylesheet" href="src/css/lam.css" />
+
+    <script src="src/js/script.js">    </script>
+        <script src="src/js/recipe-FriedSpringRolls.js"></script>
+
+    <title>recipe Fried Spring Rolls</title>
+</head>
+
+<body onload="includeHTML()">
+    <header>
+        <nav>
+            <div w3-include-html="templates/header.html"></div>
+        </nav>
+    </header>
+
+
+
+    <!-- INTRO -->
+    <div class="intro">
+        <video id="intro_video" autoplay loop muted>
+            <source src="src/img/fried spring roll intro.mp4">
+        </video>
+
+        <table class="name-of-recipe">
+            <tr>
+                <th colspan="3">Fried Spring Rolls</th>
+            </tr>
+
+            <tr class="recipe-property">
+                <td class="how-long row-around-elements">
+                    <img src="src/icons/clock-regular.svg" alt="">
+                    <p>90min</p>
+                </td>
+                <td class="difficult-level row-around-elements">
+                    <img src="src/icons/brain-solid.svg" alt="">
+                    <p>Komplex</p>
+                </td>
+                <td class="announced-date row-around-elements">
+                    <img src="src/icons/calendar-alt-regular.svg" alt="">
+                    <p>20.08.2021</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- INTRO -->
+    <main>
+        <div class="main-content">
+            <!-- INGREDIENTS -->
+            <div class="ingredients">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <div id="how-many-portions">
+                    <label for="number-portions">Zutaten für</label>
+                    <input type="number" name="number-portions" min="1" id="number-portions">
+                    <button onclick="calculatePortion()" class="portion-calculator">Portionen</button>
+                </div>
+                <div class="ingredients-detail">
+                    <p><span id="reispapier">20</span> Durchmesser getrocknete Reispapierhüllen</p>
+                    <p><span id="zucker">1</span> EL Zucker</p>
+                    <p><span id="glasnudeln">80</span> g getrocknete Glasnudeln</p>
+                    <p><span id="garnelen">200</span> g geschälte, entdarmte und fein gehackte Garnelen</p>
+                    <p><span id="schweinehack">250</span> g Schweinehack</p>
+                    <p><span id="ei">1</span> Ei</p>
+                    <p><span id="fischsauce">1,5</span> EL Fischsauce</p>
+                    <p><span id="pfeffer">1</span> TL gemahlener weißer Pfeffer</p>
+                    <p><span id="meersalz">1</span> TL Meersalz</p>
+                    <p><span id="essig">2</span> EL weißer Essig</p>
+                    <p><span id="limettensaft">2</span> EL Limettensaft</p>
+                    <p><span id="chilischote">1</span> lange rote Chilischote, fein gehackt</p>
+                    <p><span id="knoblauchzehen">2</span> Knoblauchzehen, fein gehackt</p>
+                    <p>Pflanzenöl zum Frittieren</p>
+                    <p>Salatblätter zum Servieren</p>
+                    <p>Minzblätter zum Servieren</p>
+                </div>
+            </div>
+            <!-- INGREDIENTS -->
+
+
+            <!-- INSTRUCTION -->
+            <div class="instruction">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <h3>Zubereitung</h3>
+                <h4>1.Schritt</h4>
+                <p>Für den Nuoc Cham die Zutaten verquirlen und bis zum Servieren beiseite stellen.</p>
+                <h4>2.Schritt</h4>
+                <p>Für die Füllung die Glasnudeln etwa 2 Minuten in heißem Wasser einweichen oder bis sie gerade weich
+                    sind.
+                    Gut
+                    abtropfen lassen und in kaltem Wasser abspülen, damit die Nudeln nicht weiter kochen. Gut abtropfen
+                    lassen
+                    und auf ein sauberes Geschirrtuch legen. Drehe das Geschirrtuch um die Nudeln, um so viel Wasser wie
+                    möglich
+                    zu extrahieren. Die Nudeln in eine große Schüssel geben. Verwenden Sie eine Schere, um die Nudeln in
+                    kurze
+                    Längen zu schneiden.</p>
+                <h4>3.Schritt</h4>
+                <p>Zu den Nudeln Garnelen, Schweinehack, Schalotten, Ei, Fischsauce, Zucker, Pfeffer und Salz geben.
+                    Mischen,
+                    bis alles gut vermischt ist.</p>
+                <h4>4.Schritte</h4>
+                <p>Mit der Nuoc-Cham-Dip-Sauce servieren und mit den Salatblättern die Frühlingsrollen zusammen mit ein
+                    paar
+                    Minzblättern einwickeln.</p>
+            </div>
+            <!-- INSTRUCTION -->
+
+
+            <!-- AUTHOR -->
+            <div class="author">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <h3>Rezept erstellt von</h3>
+                <div>
+                    <img src="src/img/profile.png" width="50px">
+                    <p>Lam</p>
+                </div>
+                <i style="font-size: 12px;">Video und Rezept ist vom Marion's Kitchen kopiert.</i>
+            </div>
+            <!-- AUTHOR -->
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div w3-include-html="templates/footer.html"></div>
+    </footer>
+    <!-- FOOTER -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+/****** Start Header ******/
+#mobile-header {
+ display: none;
+}
+
+header#desktop-header {
+  position: relative;
+  height: 80px;
+}
+
+header #nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 6px 2px -2px lightgray;
+  z-index: 2;
+}
+
+header #nav-container img {
+  height: 80px;
+  width: auto;
+}
+
+header #nav-container .navbar { 
+  display: flex;
+  align-self: flex-end;
+}
+
+header #nav-container .link-wrapper { 
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header #nav-container .navbar a { 
+  font-size: 20px;
+  text-decoration:none;
+  color: #000;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 10px;
+}
+
+header #nav-container .navbar a:hover { 
+  border-bottom: 3px solid #008000;
+}
+
+@media only screen and (max-width: 1000px) {
+  
+  #desktop-header {
+    display: none;
+  }
+
+  #mobile-header {
+    position: relative;
+    display: block;
+    height: 50px;
+    border-bottom: solid #000;
+    border-width: 0 1px;
+  }
+
+  #mobile-nav-container {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(220, 220, 220, 1);
+    padding-right: 10px;
+    border-bottom: 1px solid #000;
+  }
+
+  .wrapper-mobile-logo {
+    display: flex;
+    align-items: center;
+  }
+ 
+
+  .top-nav .mobile-logo{ 
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .mobile-icon {
+    width: 50px;
+    height: auto;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  #mobile-navbar a {
+    background-color: rgba(220, 220, 220, 1);
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+  }
+
+  #mobile-navbar a:hover {
+    background-color: rgba(240, 240, 240, 1);
+  }
+
+}
+/****** End Header ******/
+
+/****** Start Footer ******/
+#footer {
+  background-color: #403B3B;
+  padding: 20px 0;
+  height: 100px;
+  color: #fff;
+}
+
+#footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+/*
+#footer .logo {
+  height: 50px;
+  width: auto;
+}
+*/
+
+#footer .social-media-img {
+  height: 40px;
+  width: auto;
+}
+
+#footer a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 3px solid transparent;
+}
+
+#footer .link-main-sites a:hover {
+  transition-duration: 0.1s;
+  border-bottom: 3px solid green;
+}
+
+@media only screen and (max-width: 1000px) {
+  #footer {
+    height: 200px;
+    padding: 10px 0;
+  }
+
+  #footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+} 
+/****** End Footer ******/
+
+/****** Start Impressum ******/
+#impressum {
+  background-color: #efefef;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#impressum * {
+  text-align: justify;
+}
+
+.impressum {
+  width: 90vw;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#impressum a {
+  text-decoration: none;
+  color: #000;
+}
+/****** End Impressum ******/
+
+/****** Start Datenschutz ******/
+#datenschutz {
+  background-color: #efefef;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+#datenschutz * {
+  text-align: justify;
+}
+
+.datenschutz {
+  width: 90vw;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#datenschutz a {
+  text-decoration: none;
+  color: #000;
+}
+/****** End Datenschutz ******/
+
+/****** Start Kontaktformular ******/
+#contact {
+  background-color: #efefef;
+}
+
+textarea, input, button, select { 
+  font-family: inherit; 
+  font-size: inherit; 
+}
+
+#contact > div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  width: 90vw;
+  max-width: 800px;
+}
+
+#contact h2 {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+#contact input {
+  height: 35px;
+}
+
+#contact label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contact .hint {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#contact textarea {
+  resize: none;
+  height: 200px;
+}
+.star {
+  color: red;
+}
+
+#contact input,
+#contact textarea  {
+  border-radius: 5px;
+  border:3px solid transparent;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: none !important;
+  border: 3px solid #559D46;
+  box-shadow: 0 0 10px #559D46;
+}
+
+#contact .submit-btn {
+  background-color: #008000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+  max-width: 120px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+#contact .submit-btn:hover {
+  background-color: #559D46;
+}
+/****** End Kontaktformular ******/
+
+/****** Start Mail ******/
+.mail {
+  height: 100vh;
+  position: relative
+}
+
+.mail .email-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.mail footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/****** End Mail ******/

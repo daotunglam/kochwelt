@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/veysel.css" />
+    <link rel="stylesheet" href="src/css/daniel.css" />
+    <link rel="stylesheet" href="src/css/lam.css" />
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/recipe-StickiestRips.js"></script>
+    <title>recipe Stickiest Rips</title>
+</head>
+
+<body onload="includeHTML()">
+    <header>
+        <nav>
+            <div w3-include-html="templates/header.html"></div>
+        </nav>
+    </header>
+
+
+
+    <!-- INTRO -->
+    <div class="intro">
+        <video id="intro_video" autoplay loop muted>
+            <source src="src/img/stickiest ribs intro.mp4">
+        </video>
+
+        <table class="name-of-recipe">
+            <tr>
+                <th colspan="3">Stickiest Rips</th>
+            </tr>
+
+            <tr class="recipe-property">
+                <td class="how-long row-around-elements">
+                    <img src="src/icons/clock-regular.svg" alt="">
+                    <p>90min</p>
+                </td>
+                <td class="difficult-level row-around-elements">
+                    <img src="src/icons/brain-solid.svg" alt="">
+                    <p>normal</p>
+                </td>
+                <td class="announced-date row-around-elements">
+                    <img src="src/icons/calendar-alt-regular.svg" alt="">
+                    <p>23.08.2021</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- INTRO -->
+
+    
+
+    <main>
+        <div class="main-content">
+            <!-- INGREDIENTS -->
+            <div class="ingredients">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <div id="how-many-portions">
+                    <label for="number-portions">Zutaten für</label>
+                    <input type="number" name="number-portions" min="1" id="number-portions">
+                    <button onclick="calculatePortion()" class="portion-calculator">Portionen</button>
+                </div>
+                <div class="ingredients-detail">
+                    <p><span id="schweinerippchen">1.2</span> kg Schweinerippchen-Rack</p>
+                    <p><span id="gochujang">2</span> EL Gochujang</p>
+                    <p><span id="brauner_zucker">1/3</span> Tasse brauner Zucker</p>
+                    <p><span id="sojasauce">2</span> EL Sojasauce</p>
+                    <p><span id="salz">1</span> TL Salz</p>
+                    <p><span id="beer">1</span> Tasse Ginger Beer, Root Beer oder Ihr Lieblingssprudelgetränk</p>
+                    <p><span id="apfelessig">1</span> EL Apfelessig</p>
+                    <p>dünn geschnittene Frühlingszwiebeln/Koriander (Frühlingszwiebeln/Koriander), zum Servieren</p>
+                </div>
+            </div>
+            <!-- INGREDIENTS -->
+
+
+            <!-- INSTRUCTION -->
+            <div class="instruction">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <h3>Zubereitung</h3>
+                <h4>1.Schritt</h4>
+                <p>Backofen auf 160C/320F vorheizen.</p>
+                <h4>2.Schritt</h4>
+                <p>Schneiden Sie die Rippen in Racks, etwa 4 Rippen pro Rack.</p>
+                <h4>3.Schritt</h4>
+                <p>Kombinieren Sie Gochujang, braunen Zucker, Sojasauce und Salz in einer Schüssel. Jedes Rack mit einer
+                    kleinen
+                    Menge der Gochujang-Mischung bestreichen (den Rest für später aufbewahren). Wickeln Sie jeden Rost
+                    zuerst in
+                    Backpapier (Pergamentpapier) und dann in Aluminiumfolie ein. Auf ein Backblech legen und 90 Minuten
+                    backen.
+                </p>
+                <h4>4.Schritt</h4>
+                <p>In der Zwischenzeit die restliche Gochujang-Mischung in einen kleinen Topf geben. Ingwerbier und
+                    Essig
+                    hinzufügen. Bei mittlerer Hitze 20 Minuten köcheln lassen oder bis sie reduziert und klebrig sind.
+                    Beiseite
+                    legen.</p>
+                <h4>5.Schritt</h4>
+                <p>Nimm die Rippchen aus dem Ofen. Vorsichtig aus den Päckchen nehmen und auf ein weiteres mit Alufolie
+                    ausgelegtes Backblech legen. Den Backofengrill auf hoch drehen.</p>
+                <h4>6.Schritt</h4>
+                <p>Die Rippchen großzügig mit der reduzierten Gochujang-Glasur bestreichen. 5 Minuten unter den Grill
+                    legen.
+                    Bürsten Sie die Rippen erneut und grillen Sie sie weitere 5 Minuten oder bis die Rippen klebrig sind
+                    und
+                    gerade anfangen zu verkohlen. Auf einen Servierteller geben und mit zusätzlicher Glasur beträufeln,
+                    falls
+                    noch etwas übrig ist. Mit Frühlingszwiebeln und Koriander belegen und servieren.</p>
+            </div>
+            <!-- INSTRUCTION -->
+
+
+            <!-- AUTHOR -->
+            <div class="author">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <h3>Rezept erstellt von</h3>
+                <div>
+                    <img src="src/img/profile.png" width="50px">
+                    <p>Lam</p>
+                </div>
+                <i style="font-size: 12px;">Video und Rezept ist vom Marion's Kitchen kopiert.</i>
+            </div>
+            <!-- AUTHOR -->
+        </div>
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div w3-include-html="templates/footer.html"></div>
+    </footer>
+    <!-- FOOTER -->
+
+
+</body>
+
+</html>

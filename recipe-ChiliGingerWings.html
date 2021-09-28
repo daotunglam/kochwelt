@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/veysel.css" />
+    <link rel="stylesheet" href="src/css/daniel.css" />
+    <link rel="stylesheet" href="src/css/lam.css" />
+
+    <script src="src/js/script.js"></script>
+    <script src="src/js/recipe-ChiliGingerWings.js"></script>
+    <title>recipe Chili Ginger Wings</title>
+</head>
+
+
+<body onload="includeHTML()">
+    <header>
+        <nav>
+            <div w3-include-html="templates/header.html"></div>
+        </nav>
+    </header>
+
+
+
+    <!-- INTRO -->
+    <div class="intro">
+        <video id="intro_video" autoplay loop muted>
+            <source src="src/img/chili ginger wings intro.mp4">
+        </video>
+
+        <table class="name-of-recipe">
+            <tr>
+                <th colspan="3"><span>Oven-baked</span> <span>Chili Ginger Wings</span></th>
+            </tr>
+
+            <tr class="recipe-property">
+                <td class="how-long row-around-elements">
+                    <img src="src/icons/clock-regular.svg" alt="">
+                    <p>90min</p>
+                </td>
+                <td class="difficult-level row-around-elements">
+                    <img src="src/icons/brain-solid.svg" alt="">
+                    <p>normal</p>
+                </td>
+                <td class="announced-date row-around-elements">
+                    <img src="src/icons/calendar-alt-regular.svg" alt="">
+                    <p>23.08.2021</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- INTRO -->
+
+
+    
+    <main>
+        <div class="main-content">
+            <!-- INGREDIENTS -->
+            <div class="ingredients">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <div id="how-many-portions">
+                    <label for="number-portions">Zutaten für</label>
+                    <input type="number" name="number-portions" min="1" id="number-portions">
+                    <button onclick="calculatePortion()" class="portion-calculator">Portionen</button>
+                </div>
+                <div class="ingredients-detail">
+                    <p><span id="wing">1</span> kg Chicken Wing Drumettes</p>
+                    <p><span id="backpulver">1</span> EL Backpulver</p>
+                    <p><span id="meersalz">1</span> TL Meersalz</p>
+                    <p><span id="flasche_ticky_chilli_ginger">0.5</span> Flasche Sticky Chilli & Ginger Asian Steakhouse Marinade</p>
+                    <p><span id="sesam">0.5</span> TL weißer Sesam</p>
+                    <p><span id="fruehlingszwiebeln">1</span> TL fein gehackte Frühlingszwiebeln</p>
+                </div>
+            </div>
+            <!-- INGREDIENTS -->
+
+
+            <!-- INSTRUCTION -->
+            <div class="instruction">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <h3>Zubereitung</h3>
+                <h4>1.Schritt</h4>
+                <p>Den Backofen auf 120 °C vorheizen.</p>
+                <h4>2.Schritt</h4>
+                <p>Die Flügel mit Backpulver und Meersalz vermengen. Legen Sie die Flügel in ein Backgitter in einer
+                    Bratform.
+                    30 Minuten im Ofen backen. Drehen Sie die Flügel um. Erhöhen Sie die Ofentemperatur auf 200 °C und
+                    kochen
+                    Sie sie weitere 30-40 Minuten lang oder bis sie knusprig und durchgegart sind.</p>
+                <h4>3.Schritt</h4>
+                <p>Legen Sie die Flügel in eine große Pfanne oder einen Wok bei mittlerer bis hoher Hitze. Über die
+                    Marinade
+                    gießen und schwenken, bis die Sauce gleichmäßig überzogen ist und die Sauce eingedickt ist. Vom Herd
+                    nehmen
+                    und auf eine Servierplatte legen. Mit Sesam und Frühlingszwiebeln bestreuen. Bei Verwendung mit der
+                    gewünschten scharfen Sauce servieren.</p>
+            </div>
+            <!-- INSTRUCTION -->
+
+
+            <!-- AUTHOR -->
+            <div class="author">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <h3>Rezept erstellt von</h3>
+                <div>
+                    <img src="src/img/profile.png" width="50px">
+                    <p>Lam</p>
+                </div>
+                <i style="font-size: 12px;">Video und Rezept ist vom Marion's Kitchen kopiert.</i>
+            </div>
+            <!-- AUTHOR -->
+        </div>
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div w3-include-html="templates/footer.html"></div>
+    </footer>
+    <!-- FOOTER -->
+
+
+</body>
+
+</html>

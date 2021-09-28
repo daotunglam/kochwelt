@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/veysel.css" />
+    <link rel="stylesheet" href="src/css/daniel.css" />
+    <link rel="stylesheet" href="src/css/lam.css" />
+    <script src="src/js/script.js"></script>
+    <script src="src/js/rezept-des-tages.js"></script>
+    <title>Rezept des Tages</title>
+</head>
+
+<body onload="includeHTML()">
+    <!-- START HEADER -->
+    <header>
+        <nav>
+            <div w3-include-html="templates/header.html"></div>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- START INTRO -->
+    <div class="intro">
+        <video id="intro_video" autoplay loop muted>
+            <source src="src/img/How To Make Proper Croissants Completely By Hand - YouTube - Google Chrome 2021-08-24 21-31-02.mp4">
+        </video>
+
+        <table class="name-of-recipe">
+            <tr>
+                <th colspan="3">Frische Französische Crossiants</th>
+            </tr>
+            <tr class="recipe-property">
+                <td class="how-long row-around-elements">
+                    <img src="src/icons/clock-regular.svg" alt="">
+                    <p>90min</p>
+                </td>
+                <td class="difficult-level row-around-elements">
+                    <img src="src/icons/brain-solid.svg" alt="">
+                    <p>normal</p>
+                </td>
+                <td class="announced-date row-around-elements">
+                    <img src="src/icons/calendar-alt-regular.svg" alt="">
+                    <p>23.08.2021</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- END INTRO -->
+
+    <main>
+        <div class="main-content">
+            <!-- START INGREDIENTS -->
+            <div class="ingredients">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <div id="how-many-portions">
+                    <label for="number-portions">Zutaten für</label>
+                    <input type="number" name="number-portions" min="1" id="number-portions">
+                    <button onclick="calculateCroissant()" class="portion-calculator">Portionen</button>
+                </div>
+                <div class="ingredients-detail">
+                    <p><span id="mehl">500</span>g Mehl</p>
+                    <p> <span id="zucker">50</span>g Zucker</p>
+                    <p><span id="hefe">25</span>g frische Hefe</p>
+                    <p><span id="salz">1</span> TL Salz</p>
+                    <p><span id="wasser">310</span>ml Wasser</p>
+                </div>
+            </div>
+            <!-- END INGREDIENTS -->
+
+            <!-- START INSTRUCTION -->
+            <div class="instruction">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <h3>Zubereitung</h3>
+                <h4>1.Schritt</h4>
+                <p>Crossiant Teig vorbereiten durch das Vermengen von Hefe sowie Wasser Zucker und Salz.</p>
+                <h4>2.Schritt</h4>
+                <p>Den entstandenen Teig einem Crossiant entsprechend falten und danach in den Kühlschrank legen </p>
+                <h4>3.Schritt</h4>
+                <p>Nach 20 Minuten aus dem Kühlschrank nehmen und mit Eigelb bepinseln und dann in den vorgeheizten Ofen schieben und 25 Minuten lang backen</p>
+            </div>
+            <!-- END INSTRUCTION -->
+
+            <!-- START AUTHOR -->
+            <div class="author">
+                <hr style="width:100%;height:1px;border-width:0;color:lightgray;background-color:lightgray;margin-bottom:5%;">
+                <h3>Rezept erstellt von</h3>
+                <div>
+                    <img src="src/img/profile.png" width="50px">
+                    <p>Daniel</p>
+                </div>
+                <i style="font-size: 12px;">Video und Rezept ist von Marion's Kitchen kopiert.</i>
+            </div>
+            <!-- END AUTHOR -->
+        </div>
+    </main>
+    
+    <!-- START FOOTER -->
+    <footer>
+        <div w3-include-html="templates/footer.html"></div>
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>
